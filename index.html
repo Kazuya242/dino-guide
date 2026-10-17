@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Set this to the Application ID of the "Dino Guide" app in the Discord Developer Portal -->
+<meta name="discord-client-id" content="PUT_CLIENT_ID_HERE">
+<title>Dino Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+  <div class="brand"><span class="logo">🦖</span><div><div class="title">Dino Guide</div><div class="sub">The Isle · Evrima</div></div></div>
+  <nav class="tabs">
+    <button class="tab on" data-tab="dinos">🦕 Dinos</button>
+    <button class="tab" data-tab="mutations">🧬 Mutations</button>
+    <button class="tab" data-tab="builder">🛠️ Builder</button>
+    <button class="tab" data-tab="rules">📜 Elder & Nest</button>
+  </nav>
+  <input id="search" type="search" placeholder="Search dinos…" autocomplete="off">
+</div>
+<main id="main"></main>
+<footer id="footer"></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
