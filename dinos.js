@@ -416,7 +416,7 @@ export const DINOS = [
     id: "teno", name: "Tenontosaurus", nick: "Teno", diet: "Herbivore", emoji: "🦎", color: "#76448a",
     role: "Versatile defender", difficulty: "Easy",
     about: "Good beginner herbivore with a full moveset. Bait attackers, then punish them with a rear kick or tail slam.",
-    stats: { weight: "1,600 kg", speed: "~41 km/h", bite: "35", group: "8", growth: "About 5 h 40 min" },
+    stats: { weight: "1,600 kg", speed: "~41 km/h", bite: "35", group: "8", growth: "" },
     food: "Mountain ash, wild potato root, radish root. Horned melon gives spasms, avoid it.",
     abilities: [
       ["LMB", "Bite", "Cheap, modest damage."],
@@ -441,7 +441,7 @@ export const DINOS = [
     id: "pachy", name: "Pachycephalosaurus", nick: "Pachy", diet: "Herbivore", emoji: "🪨", color: "#a04000",
     role: "Hit-and-run headbutter", difficulty: "Easy",
     about: "Headbutts break bones. Charge a target in a straight line, fracture it, then run. Never stay after a good hit.",
-    stats: { weight: "500 to 700 kg (sources differ)", speed: "~42 km/h", bite: "30", group: "8", growth: "About 6 h 15 min" },
+    stats: { weight: "500 to 700 kg (sources differ)", speed: "~42 km/h", bite: "30", group: "8", growth: "" },
     food: "Variegated orange, agave, coconut",
     abilities: [
       ["LMB", "Bite", "Small extra attack."],
@@ -465,7 +465,7 @@ export const DINOS = [
     id: "dryo", name: "Dryosaurus", nick: "Dryo", diet: "Herbivore", emoji: "💨", color: "#27ae60",
     role: "Dodgy prey", difficulty: "Easy",
     about: "Small and quick. Two dodge charges that don't use stamina. You win by seeing danger early and breaking line of sight.",
-    stats: { weight: "130 kg", speed: "~45 km/h", bite: "20", group: "10", growth: "About 4 h 25 min" },
+    stats: { weight: "130 kg", speed: "~45 km/h", bite: "20", group: "10", growth: "" },
     food: "Variegated orange, agave, sunchoke roots, chanterelle, sumac, horned melon, russula, wild potato, red currant",
     abilities: [
       ["LMB", "Bite", "Tiny defensive hit."],
@@ -488,7 +488,7 @@ export const DINOS = [
     id: "hypsi", name: "Hypsilophodon", nick: "Hypsi", diet: "Herbivore", emoji: "🧪", color: "#58d68d",
     role: "Acid scout", difficulty: "Easy",
     about: "Tiny and fast to grow. Jumps, climbs and spits acid to blind predators, then disappears.",
-    stats: { weight: "20 kg", speed: "~40 km/h", bite: "2", group: "10", growth: "About 1 h 50 min" },
+    stats: { weight: "20 kg", speed: "~40 km/h", bite: "2", group: "10", growth: "" },
     food: "Mango, chanterelle, radish root",
     abilities: [
       ["LMB", "Bite", "Basically nothing."],
@@ -515,7 +515,7 @@ export const DINOS = [
     id: "galli", name: "Gallimimus", nick: "Galli", diet: "Omnivore", emoji: "🏃", color: "#d4ac0d",
     role: "Fast flock scout", difficulty: "Easy",
     about: "The ostrich. Fast, eats almost anything, and buffs its flock's speed with a call. Kite, don't fight.",
-    stats: { weight: "535 kg", speed: "~46 km/h (more with good diet)", bite: "25", group: "8 to 10 (sources differ)", growth: "About 5 h 25 min" },
+    stats: { weight: "535 kg", speed: "~46 km/h (more with good diet)", bite: "25", group: "8 to 10 (sources differ)", growth: "" },
     food: "Crab, mango, frogs, sumac, pumpkin, sunchoke roots. Sniff for burrows (frogs, crabs, compies).",
     abilities: [
       ["LMB", "Kick", "Camera-aimed kick. Stops you moving."],
