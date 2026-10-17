@@ -267,13 +267,14 @@ export const DINOS = [
     abilities: [
       ["LMB", "Peck", "Tiny damage."],
       ["Space x3", "Take off", "One hop, then two presses to launch."],
+      ["Hold Z", "Air brake", "Slow down before you land or latch onto a tree or cliff."],
       ["G (flying)", "Auto circling", "Circle an area without spending stamina."],
       ["G at water, wait ~60 s, LMB", "Shore fishing", "Catch fish from the bank."],
       ["Hold RMB near wall (slow)", "Latch", "Hang on a vertical surface."],
     ],
     strengths: ["Best travel on the map", "Finds bodies, groups and threats", "Escapes most land threats"],
     weaknesses: ["Very fragile on the ground", "Needs stamina to take off", "Almost no damage", "Deinos at the fishing spot"],
-    tips: ["Plan where you take off before you land", "Glide to save stamina", "Check the water before fishing"],
+    tips: ["Plan where you take off before you land", "Hold Z to brake before landing or latching", "Glide to save stamina", "Check the water before fishing"],
     mistakes: ["Landing in tight spots", "Fishing at a Deino river", "Fighting healthy adults"],
     counters: "Deinos at water, anything that catches you landed.",
     build: [
