@@ -10,7 +10,7 @@ export const MUTATIONS = [
   { name: "Accelerated Prey Drive", value: "10%", diet: "Carnivore", type: "life", effect: "More damage to animals under 35% health." },
   { name: "Hematophagy", value: "15%", diet: "Carnivore", type: "life", effect: "Eating corpses restores some thirst." },
   { name: "Hemomania", value: "5%", diet: "Carnivore", type: "life", effect: "More damage to bleeding targets." },
-  { name: "Cannibalistic", value: "", diet: "Carnivore", type: "unlock", slots: [2, 4], unlock: "Eat your own species.", effect: "Your own species counts as preferred prey." },
+  { name: "Cannibalistic", value: "", diet: "Carnivore", type: "life", slots: [2, 4], effect: "Your own species counts as preferred prey. Only shows up on slot 2 or slot 4." },
   { name: "Augmented Tapetum", value: "50%", diet: "Carnivore", type: "unlock", slots: [2], unlock: "Kill 5 players at night.", effect: "Better night vision." },
   { name: "Osteophagic", value: "15%", diet: "Carnivore", type: "unlock", slots: [2, 3], unlock: "Eat bones while you have a broken bone.", effect: "Eating bones heals fractures faster." },
   { name: "Hypermetabolic Inanition", value: "15%", diet: "Carnivore", type: "slot2", effect: "Deal more damage depending on your hunger. Sources describe it differently, test it." },
@@ -18,8 +18,8 @@ export const MUTATIONS = [
   { name: "Barometric Sensitivity", value: "", diet: "Herbivore", type: "life", effect: "Warning before storms or droughts." },
   { name: "Hypervigilance", value: "50%", diet: "Herbivore", type: "life", effect: "Wider camera while eating or drinking, and other dinos' footsteps are louder." },
   { name: "Photosynthetic Regeneration", value: "10%", diet: "Herbivore", type: "life", effect: "Faster stamina regen in daylight." },
-  { name: "Truculency", value: "5%", diet: "Herbivore", type: "life", effect: "Better chance to throw off latched animals when bucking." },
-  { name: "Xerocole Adaptation", value: "15%", diet: "Herbivore", type: "life", effect: "Get water from eating plants." },
+  { name: "Truculency", value: "5 to 20%", diet: "Herbivore", type: "life", effect: "Better chance to throw off latched animals when bucking." },
+  { name: "Xerocole Adaptation", value: "15 to 20%", diet: "Herbivore", type: "life", effect: "Get water from eating plants." },
   { name: "Tactile Endurance", value: "50%", diet: "Herbivore", type: "slot2", effect: "Part of the damage you take comes back as stamina." },
   { name: "Social Behavior", value: "", diet: "HerbOmni", type: "life", leader: true, effect: "Bigger group size limit. Group leader only." },
 
@@ -45,13 +45,13 @@ export const MUTATIONS = [
   { name: "Traumatic Thrombosis", value: "", diet: "All", type: "slot2", effect: "You can't bleed out while resting." },
   { name: "Gastronomic Regeneration", value: "10%", diet: "All", type: "slot2", effect: "Eating heals a little." },
 
-  { name: "Enhanced Digestion", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Keep your nutrients up for 60 minutes.", effect: "Nutrients go down slower." },
-  { name: "Heightened Ghrelin", value: "25%", diet: "All", type: "unlock", slots: [2], unlock: "Keep hunger above 80% for 30 minutes.", effect: "You can overeat a lot more before throwing up." },
+  { name: "Enhanced Digestion", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Keep a good diet for a long time (sources differ: 60 minutes or 60% of your growth).", effect: "Nutrients go down slower." },
+  { name: "Heightened Ghrelin", value: "25%", diet: "All", type: "unlock", slots: [2], unlock: "Overeat a lot (sources differ on the exact task).", effect: "You can overeat a lot more before throwing up." },
   { name: "Multichambered Lungs", value: "5%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Burn about 4,500 stamina sprinting or fast swimming.", effect: "Stamina starts coming back sooner." },
   { name: "Reinforced Tendons", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Jump 50 times.", effect: "Jumps cost less stamina (cheaper take-off for Ptera)." },
   { name: "Reniculate Kidneys", value: "", diet: "All", type: "unlock", slots: [2, 3], unlock: "Lose about 1,250 thirst drinking saltwater.", effect: "You can drink saltwater." },
   { name: "Parthenogenesis", value: "", diet: "All", type: "unlock", slots: [2], female: true, noInherit: true, unlock: "Female only. Unlock condition not published.", effect: "Nest without a mate. Not passed on to babies." },
-  { name: "Prolific Reproduction", value: "10%", diet: "All", type: "unlock", slots: [2], female: true, unlock: "Female only. Raise babies (exact condition varies by source).", effect: "Your babies regen faster, need less food and grow faster." },
+  { name: "Prolific Reproduction", value: "10%", diet: "All", type: "unlock", slots: [2], female: true, unlock: "Female only. Raise babies, about 5 to juvenile (one source).", effect: "Your babies regen faster, need less food and grow faster." },
 ];
 
 export const HORDETEST = [
@@ -79,6 +79,6 @@ export function canUse(m, diet) {
 
 export function slotsFor(m) {
   if (m.type === "slot2") return [2];
-  if (m.type === "unlock") return m.slots;
+  if (m.slots) return m.slots;
   return [1, 2, 3, 4];
 }
