@@ -68,7 +68,7 @@ function viewDino(d) {
         <p>${esc(d.about)}</p>
       </div>
     </header>
-    <div class="stats">${stat("⚖️ Max weight", s.weight)}${stat("💨 Max speed", s.speed)}${stat("🦷 Bite force", s.bite)}${stat("👥 Max group", s.group)}${stat("⏳ Growth", s.growth)}</div>
+    <div class="stats">${stat("⚖️ Max weight", s.weight)}${stat("💨 Max speed", s.speed)}${stat("🦷 Bite force", s.bite)}${stat("👥 Max group", s.group)}${s.growth ? stat("⏳ Growth to 100%", s.growth) : ""}</div>
     <p class="note">Max values for an adult. They change with growth, Prime or Frail elder, and server settings.</p>
 
     <section class="box"><h3>🍖 What it eats</h3><p>${esc(d.food)}</p></section>
