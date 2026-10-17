@@ -16,7 +16,7 @@ export const DINOS = [
     id: "rex", name: "Tyrannosaurus", nick: "Rex", diet: "Carnivore", emoji: "🦖", color: "#c0392b",
     role: "Ambush apex", difficulty: "Hard",
     about: "The biggest hitter on the island. Slow and loud, but one good bite or Crush ends fights. Plays best by waiting, then punishing one mistake.",
-    stats: { weight: "9,350 kg", speed: "~29 km/h", bite: "700", group: "2", growth: "About 35 h 30 min" },
+    stats: { weight: "9,350 kg", speed: "~29 km/h", bite: "700", group: "2", growth: "" },
     food: "Stego, Teno, Pachy, Kentro, Diablo, Trike, Maia, Galli, Dryo, Hypsi, Beipi, boar, deer, goat, turtles, small animals",
     abilities: [
       ["LMB", "Bite", "Main damage. Get in range first."],
@@ -43,7 +43,7 @@ export const DINOS = [
     id: "allo", name: "Allosaurus", nick: "Allo", diet: "Carnivore", emoji: "🦖", color: "#d35400",
     role: "Mobile bleed hunter", difficulty: "Medium",
     about: "Fast big carnivore that wins with bleed. Pick a target, make it run, cut it, back off, then go again.",
-    stats: { weight: "2,593 kg", speed: "~40 km/h", bite: "175", group: "3", growth: "About 10 h" },
+    stats: { weight: "2,593 kg", speed: "~40 km/h", bite: "175", group: "3", growth: "" },
     food: "Stego, Kentro, Teno, Diablo, Trike, Maia, Dryo, boar, deer, goat",
     abilities: [
       ["LMB", "Bite", "Finish targets and keep pressure."],
@@ -67,7 +67,7 @@ export const DINOS = [
     id: "carno", name: "Carnotaurus", nick: "Carno", diet: "Carnivore", emoji: "🐂", color: "#e67e22",
     role: "Straight-line chaser", difficulty: "Medium",
     about: "The sprinter. Super fast in a straight line, uses a charged headbutt to knock prey down. Loves open fields, hates forests.",
-    stats: { weight: "1,300 kg", speed: "~49.5 km/h", bite: "150", group: "3", growth: "About 7 h 40 min" },
+    stats: { weight: "1,300 kg", speed: "~49.5 km/h", bite: "150", group: "3", growth: "" },
     food: "Pachy, Teno, Diablo, Maia, Dryo, Galli, Herrera, Omni, Troodon, boar, deer",
     abilities: [
       ["LMB", "Bite", "Finish knocked-down targets."],
@@ -91,7 +91,7 @@ export const DINOS = [
     id: "cerato", name: "Ceratosaurus", nick: "Cerato", diet: "Carnivore", emoji: "🦴", color: "#a04000",
     role: "Carrion bruiser", difficulty: "Medium",
     about: "Lives off carcasses. Eats rotten meat, organs and bones, and its bite makes enemies sick. Strong next to a body, weak away from it.",
-    stats: { weight: "1,450 kg", speed: "~40 km/h", bite: "150", group: "5", growth: "About 6 h" },
+    stats: { weight: "1,450 kg", speed: "~40 km/h", bite: "150", group: "5", growth: "" },
     food: "Teno, Pachy, Kentro, Diablo, Carno, Cerato, Deino, Omni, Dilo, Beipi, deer, goat. Rotten meat and bones too (bones give all 3 vitamins).",
     abilities: [
       ["LMB", "Bite", "Builds bacteria in the target."],
@@ -116,7 +116,7 @@ export const DINOS = [
     id: "deino", name: "Deinosuchus", nick: "Deino", diet: "Carnivore", emoji: "🐊", color: "#1e8449",
     role: "Water ambush", difficulty: "Hard",
     about: "The crocodile. Waits underwater at busy rivers and grabs anything that drinks or crosses. Very dangerous in water, slow and weak on land.",
-    stats: { weight: "8,000 kg", speed: "~18 km/h on land", bite: "500", group: "2", growth: "About 23 h" },
+    stats: { weight: "8,000 kg", speed: "~18 km/h on land", bite: "500", group: "2", growth: "" },
     food: "Teno, Pachy, Kentro, Diablo, Maia, Galli, Beipi, Carno, Cerato, Omni, Troodon, Deino, frogs, fish, turtles. Can't eat underwater.",
     abilities: [
       ["LMB", "Bite", "Very heavy. Guards banks and finishes trapped targets."],
@@ -141,7 +141,7 @@ export const DINOS = [
     id: "dilo", name: "Dilophosaurus", nick: "Dilo", diet: "Carnivore", emoji: "🌀", color: "#8e44ad",
     role: "Night venom hunter", difficulty: "Medium",
     about: "Venom and night vision. Bite to poison, then make the target hallucinate from range. Best in duos at night.",
-    stats: { weight: "700 kg", speed: "~47.5 km/h", bite: "85", group: "4", growth: "About 6 h. Venom works from 50% growth." },
+    stats: { weight: "700 kg", speed: "~47.5 km/h", bite: "85", group: "4", growth: "" },
     food: "Herrera, Cerato, Diablo, Carno, Hypsi, Galli, Maia, Dryo, deer, chicken, goat, turtles",
     abilities: [
       ["LMB", "Venom bite", "Damage plus venom. Bite, back off, come back."],
@@ -165,7 +165,7 @@ export const DINOS = [
     id: "herrera", name: "Herrerasaurus", nick: "Herrera", diet: "Carnivore", emoji: "🌳", color: "#ca6f1e",
     role: "Tree ambusher", difficulty: "Hard",
     about: "Climbs trees, drops onto prey for big damage and bleed, then climbs back up. Super fragile on the ground.",
-    stats: { weight: "175 kg", speed: "~45 km/h", bite: "30", group: "10", growth: "About 5 h 25 min" },
+    stats: { weight: "175 kg", speed: "~45 km/h", bite: "30", group: "10", growth: "" },
     food: "Teno, Pachy, Kentro, Hypsi, Dryo, Ptera, Beipi, Galli, Omni, boar, frogs, chicken, goat, turtles",
     abilities: [
       ["LMB", "Bite", "Light. For finishing hurt targets."],
@@ -190,7 +190,7 @@ export const DINOS = [
     id: "omni", name: "Omniraptor", nick: "Omni", diet: "Carnivore", emoji: "🦅", color: "#b03a2e",
     role: "Pack harasser", difficulty: "Medium",
     about: "Pack raptor. Isolate, tire out, pounce, bleed, leave, repeat. Strong in a coordinated pack, weak alone.",
-    stats: { weight: "395 kg", speed: "~47 km/h", bite: "65", group: "8", growth: "About 5 h 55 min" },
+    stats: { weight: "395 kg", speed: "~47 km/h", bite: "65", group: "8", growth: "" },
     food: "Herrera, Pachy, Cerato, Kentro, Carno, Diablo, Troodon, Dryo, Galli, Maia, deer, rabbit",
     abilities: [
       ["LMB", "Bite", "Finish wounded targets."],
@@ -214,7 +214,7 @@ export const DINOS = [
     id: "troodon", name: "Troodon", nick: "Troodon", diet: "Carnivore", emoji: "☠️", color: "#6c3483",
     role: "Venom pack", difficulty: "Hard",
     about: "Tiny venom pack. Each pounce adds venom in 3 stages. Wait for the call cue between pounces, then the whole pack commits at stage 3.",
-    stats: { weight: "60 kg", speed: "~45 km/h", bite: "15", group: "10", growth: "About 3 h 10 min" },
+    stats: { weight: "60 kg", speed: "~45 km/h", bite: "15", group: "10", growth: "" },
     food: "Pachy, Teno, Kentro, Hypsi, Dryo, Ptera, Maia, deer, rabbit, chicken, goat, frogs, compies, turtles",
     abilities: [
       ["LMB", "Bite", "Small chip damage or finisher."],
@@ -237,7 +237,7 @@ export const DINOS = [
     id: "austro", name: "Austroraptor", nick: "Austro", diet: "Carnivore", emoji: "🎣", color: "#2471a3",
     role: "Shoreline hunter", difficulty: "Medium",
     about: "Newest dino (patch 0.21.772). Fishes in the day, hunts small stuff on the banks and escapes through water.",
-    stats: { weight: "240 kg", speed: "~48 km/h", bite: "40", group: "8", growth: "Not confirmed" },
+    stats: { weight: "240 kg", speed: "~48 km/h", bite: "40", group: "8", growth: "" },
     food: "Fish, clams, frogs, chicken, rabbit, turtles, Hypsi, Beipi, Deino",
     abilities: [
       ["LMB", "Bite", "Finish small prey."],
@@ -262,7 +262,7 @@ export const DINOS = [
     id: "ptera", name: "Pteranodon", nick: "Ptera", diet: "Carnivore", emoji: "🪽", color: "#5d6d7e",
     role: "Flying scout and fisher", difficulty: "Medium",
     about: "Flies. Best for scouting, finding bodies and fishing. Avoids fights. Bad landings kill more Pteras than enemies do.",
-    stats: { weight: "90 kg", speed: "~38 km/h", bite: "20", group: "6", growth: "About 4 h 30 min" },
+    stats: { weight: "90 kg", speed: "~38 km/h", bite: "20", group: "6", growth: "" },
     food: "Fish, crabs, clams, chicken, rabbit, frogs, turtles, Hypsi, Troodon, Beipi",
     abilities: [
       ["LMB", "Peck", "Tiny damage."],
@@ -291,7 +291,7 @@ export const DINOS = [
     id: "trike", name: "Triceratops", nick: "Trike", diet: "Herbivore", emoji: "🦏", color: "#7d6608",
     role: "Front wall", difficulty: "Hard",
     about: "Huge horned tank. Holds the front, flips attackers and finishes them. The rear is the weak spot, so it needs a herd.",
-    stats: { weight: "9,500 kg", speed: "~23 km/h", bite: "600 to 900 (sources differ)", group: "4", growth: "About 29 h" },
+    stats: { weight: "9,500 kg", speed: "~23 km/h", bite: "600 to 900 (sources differ)", group: "4", growth: "" },
     food: "Variegated orange, fiddlehead, papaya",
     abilities: [
       ["LMB", "Horn attack", "Quick hit."],
@@ -318,7 +318,7 @@ export const DINOS = [
     id: "stego", name: "Stegosaurus", nick: "Stego", diet: "Herbivore", emoji: "🦕", color: "#196f3d",
     role: "Defensive giant", difficulty: "Medium",
     about: "Slow giant with a deadly tail. Keep your tail toward the threat and punish anyone who gets too close.",
-    stats: { weight: "6,000 kg", speed: "~26 to 29 km/h", bite: "50", group: "5", growth: "About 18 h" },
+    stats: { weight: "6,000 kg", speed: "~26 to 29 km/h", bite: "50", group: "5", growth: "" },
     food: "Marigold, sumac, pumpkin",
     abilities: [
       ["LMB", "Close bite", "For small threats."],
@@ -342,7 +342,7 @@ export const DINOS = [
     id: "kentro", name: "Kentrosaurus", nick: "Kentro", diet: "Herbivore", emoji: "🦔", color: "#117864",
     role: "Spiked defender", difficulty: "Medium",
     about: "Added in patch 0.21.720. Spikes hurt anyone who bites you. Hold your angle and let them hurt themselves.",
-    stats: { weight: "1,950 kg", speed: "~40 km/h", bite: "30", group: "5", growth: "About 11 h" },
+    stats: { weight: "1,950 kg", speed: "~40 km/h", bite: "30", group: "5", growth: "" },
     food: "Marigold, sumac, pumpkin",
     abilities: [
       ["LMB", "Tail swing", "Main attack."],
@@ -367,7 +367,7 @@ export const DINOS = [
     id: "diablo", name: "Diabloceratops", nick: "Diablo", diet: "Herbivore", emoji: "😈", color: "#922b21",
     role: "Defensive charger", difficulty: "Medium",
     about: "Aggressive defender with horns. Keep threats in front, charge, then go back to your herd.",
-    stats: { weight: "3,000 kg", speed: "~34 to 36 km/h", bite: "275", group: "6", growth: "About 7 h 45 min" },
+    stats: { weight: "3,000 kg", speed: "~34 to 36 km/h", bite: "275", group: "6", growth: "" },
     food: "Marigold, fireweed, cashew",
     abilities: [
       ["LMB", "Horn attack", "Main front attack."],
@@ -392,7 +392,7 @@ export const DINOS = [
     id: "maia", name: "Maiasaura", nick: "Maia", diet: "Herbivore", emoji: "🛡️", color: "#1a5276",
     role: "Herd pillar", difficulty: "Easy",
     about: "Big herd protector. Switches between 2 and 4 legs. Strong when guarding babies and the herd, weak alone.",
-    stats: { weight: "3,750 kg", speed: "~42 km/h", bite: "50", group: "10", growth: "About 7 h" },
+    stats: { weight: "3,750 kg", speed: "~42 km/h", bite: "50", group: "10", growth: "" },
     food: "Mountain ash, wild potato root, radish root",
     abilities: [
       ["Stance toggle", "2 legs / 4 legs", "4 legs for travel, 2 legs to face threats."],
@@ -541,7 +541,7 @@ export const DINOS = [
     id: "beipi", name: "Beipiaosaurus", nick: "Beipi", diet: "Omnivore", emoji: "🦆", color: "#2e86c1",
     role: "Water forager", difficulty: "Easy",
     about: "Small amphibious omnivore. Weak on land, slippery in water. Dives, breaches and switches banks to escape.",
-    stats: { weight: "90 kg", speed: "~32 km/h", bite: "20", group: "10 to 12 (sources differ)", growth: "About 3 h 40 min" },
+    stats: { weight: "90 kg", speed: "~32 km/h", bite: "20", group: "10 to 12 (sources differ)", growth: "" },
     food: "Crab, fish, frogs, radish flower, wild potato vine, sunchoke roots",
     abilities: [
       ["LMB (land)", "Claws", "Make an opening, don't brawl."],
