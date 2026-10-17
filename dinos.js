@@ -7,6 +7,7 @@ export const VERIFIED = "17 Oct 2026";
 export const PATCH = "0.21.772";
 
 const FANS = (s) => `https://theisle.fans/en/dinosaurs/${s}`;
+const QG = (t) => `https://www.evrimaquickguide.com/playables/quick-facts-${t}`;
 const BEGINNER = "https://www.theisle-game.com/en/guides/best-beginner-dinosaurs-evrima";
 
 export const DINOS = [
@@ -15,8 +16,8 @@ export const DINOS = [
     id: "rex", name: "Tyrannosaurus", nick: "Rex", diet: "Carnivore", emoji: "🦖", color: "#c0392b",
     role: "Ambush apex", difficulty: "Hard",
     about: "The biggest hitter on the island. Slow and loud, but one good bite or Crush ends fights. Plays best by waiting, then punishing one mistake.",
-    stats: { weight: "9,350 kg", speed: "~29 km/h", bite: "700", group: "2", growth: "Very long (not confirmed)" },
-    food: "Stego, Teno, Pachy, Diablo, Trike, Maia, Galli, Dryo, Hypsi, Beipi, boar, deer, goat, turtles, small animals",
+    stats: { weight: "9,350 kg", speed: "~29 km/h", bite: "700", group: "2", growth: "About 35 h 30 min" },
+    food: "Stego, Teno, Pachy, Kentro, Diablo, Trike, Maia, Galli, Dryo, Hypsi, Beipi, boar, deer, goat, turtles, small animals",
     abilities: [
       ["LMB", "Bite", "Main damage. Get in range first."],
       ["RMB", "Muzzle swing", "Fast head hit to keep enemies off you."],
@@ -36,13 +37,13 @@ export const DINOS = [
       ["Hemomania", "More damage on bleeding prey your partner already hit."],
       ["Efficient Digestion", "Feeding a Rex is a lot of work. Food lasts longer."],
     ],
-    sources: [FANS("tyrannosaurus")],
+    sources: [QG("carnivores"), FANS("tyrannosaurus")],
   },
   {
     id: "allo", name: "Allosaurus", nick: "Allo", diet: "Carnivore", emoji: "🦖", color: "#d35400",
     role: "Mobile bleed hunter", difficulty: "Medium",
     about: "Fast big carnivore that wins with bleed. Pick a target, make it run, cut it, back off, then go again.",
-    stats: { weight: "2,593 kg", speed: "~40 km/h", bite: "175", group: "3", growth: "About 10 h (community)" },
+    stats: { weight: "2,593 kg", speed: "~40 km/h", bite: "175", group: "3", growth: "About 10 h" },
     food: "Stego, Kentro, Teno, Diablo, Trike, Maia, Dryo, boar, deer, goat",
     abilities: [
       ["LMB", "Bite", "Finish targets and keep pressure."],
@@ -60,13 +61,13 @@ export const DINOS = [
       ["Cellular Regeneration", "Heal up between hunting waves."],
       ["Sustained Hydration", "Less time at busy water holes."],
     ],
-    sources: [FANS("allosaurus")],
+    sources: [QG("carnivores"), FANS("allosaurus")],
   },
   {
     id: "carno", name: "Carnotaurus", nick: "Carno", diet: "Carnivore", emoji: "🐂", color: "#e67e22",
     role: "Straight-line chaser", difficulty: "Medium",
     about: "The sprinter. Super fast in a straight line, uses a charged headbutt to knock prey down. Loves open fields, hates forests.",
-    stats: { weight: "1,300 kg", speed: "~49.5 km/h", bite: "150", group: "3", growth: "Not confirmed" },
+    stats: { weight: "1,300 kg", speed: "~49.5 km/h", bite: "150", group: "3", growth: "About 7 h 40 min" },
     food: "Pachy, Teno, Diablo, Maia, Dryo, Galli, Herrera, Omni, Troodon, boar, deer",
     abilities: [
       ["LMB", "Bite", "Finish knocked-down targets."],
@@ -84,13 +85,13 @@ export const DINOS = [
       ["Sustained Hydration", "Less time stuck at water."],
       ["Cellular Regeneration", "Heal between chases."],
     ],
-    sources: [FANS("carnotaurus")],
+    sources: [QG("carnivores"), FANS("carnotaurus")],
   },
   {
     id: "cerato", name: "Ceratosaurus", nick: "Cerato", diet: "Carnivore", emoji: "🦴", color: "#a04000",
     role: "Carrion bruiser", difficulty: "Medium",
     about: "Lives off carcasses. Eats rotten meat, organs and bones, and its bite makes enemies sick. Strong next to a body, weak away from it.",
-    stats: { weight: "1,450 kg", speed: "~40 km/h", bite: "150", group: "5", growth: "Not confirmed" },
+    stats: { weight: "1,450 kg", speed: "~40 km/h", bite: "150", group: "5", growth: "About 6 h" },
     food: "Teno, Pachy, Kentro, Diablo, Carno, Cerato, Deino, Omni, Dilo, Beipi, deer, goat. Rotten meat and bones too (bones give all 3 vitamins).",
     abilities: [
       ["LMB", "Bite", "Builds bacteria in the target."],
@@ -109,13 +110,13 @@ export const DINOS = [
       ["Efficient Digestion", "You need food often. Make it last."],
       ["Cellular Regeneration", "Heal while guarding a body."],
     ],
-    sources: [FANS("ceratosaurus")],
+    sources: [QG("carnivores"), FANS("ceratosaurus")],
   },
   {
     id: "deino", name: "Deinosuchus", nick: "Deino", diet: "Carnivore", emoji: "🐊", color: "#1e8449",
     role: "Water ambush", difficulty: "Hard",
     about: "The crocodile. Waits underwater at busy rivers and grabs anything that drinks or crosses. Very dangerous in water, slow and weak on land.",
-    stats: { weight: "8,000 kg", speed: "~18 km/h on land", bite: "500", group: "2", growth: "Very long (not confirmed)" },
+    stats: { weight: "8,000 kg", speed: "~18 km/h on land", bite: "500", group: "2", growth: "About 23 h" },
     food: "Teno, Pachy, Kentro, Diablo, Maia, Galli, Beipi, Carno, Cerato, Omni, Troodon, Deino, frogs, fish, turtles. Can't eat underwater.",
     abilities: [
       ["LMB", "Bite", "Very heavy. Guards banks and finishes trapped targets."],
@@ -134,13 +135,13 @@ export const DINOS = [
       ["Submerged Optical Retention", "See better underwater."],
       ["Efficient Digestion", "You can wait a long time between meals."],
     ],
-    sources: [FANS("deinosuchus")],
+    sources: [QG("carnivores"), FANS("deinosuchus")],
   },
   {
     id: "dilo", name: "Dilophosaurus", nick: "Dilo", diet: "Carnivore", emoji: "🌀", color: "#8e44ad",
     role: "Night venom hunter", difficulty: "Medium",
     about: "Venom and night vision. Bite to poison, then make the target hallucinate from range. Best in duos at night.",
-    stats: { weight: "700 kg", speed: "~47.5 km/h", bite: "85", group: "4", growth: "Not confirmed. Venom works from 50% growth." },
+    stats: { weight: "700 kg", speed: "~47.5 km/h", bite: "85", group: "4", growth: "About 6 h. Venom works from 50% growth." },
     food: "Herrera, Cerato, Diablo, Carno, Hypsi, Galli, Maia, Dryo, deer, chicken, goat, turtles",
     abilities: [
       ["LMB", "Venom bite", "Damage plus venom. Bite, back off, come back."],
@@ -158,13 +159,13 @@ export const DINOS = [
       ["Hemomania", "Extra damage when your partner bleeds the target."],
       ["Cellular Regeneration", "Heal between hit-and-runs."],
     ],
-    sources: [FANS("dilophosaurus")],
+    sources: [QG("carnivores"), FANS("dilophosaurus")],
   },
   {
     id: "herrera", name: "Herrerasaurus", nick: "Herrera", diet: "Carnivore", emoji: "🌳", color: "#ca6f1e",
     role: "Tree ambusher", difficulty: "Hard",
     about: "Climbs trees, drops onto prey for big damage and bleed, then climbs back up. Super fragile on the ground.",
-    stats: { weight: "175 kg", speed: "~45 km/h", bite: "30", group: "10", growth: "About 5 h 25 min (community)" },
+    stats: { weight: "175 kg", speed: "~45 km/h", bite: "30", group: "10", growth: "About 5 h 25 min" },
     food: "Teno, Pachy, Kentro, Hypsi, Dryo, Ptera, Beipi, Galli, Omni, boar, frogs, chicken, goat, turtles",
     abilities: [
       ["LMB", "Bite", "Light. For finishing hurt targets."],
@@ -183,13 +184,13 @@ export const DINOS = [
       ["Hemomania", "More damage on targets bleeding from your drop."],
       ["Featherweight", "Your tracks fade faster."],
     ],
-    sources: [FANS("herrerasaurus"), BEGINNER],
+    sources: [QG("carnivores"), FANS("herrerasaurus"), BEGINNER],
   },
   {
     id: "omni", name: "Omniraptor", nick: "Omni", diet: "Carnivore", emoji: "🦅", color: "#b03a2e",
     role: "Pack harasser", difficulty: "Medium",
     about: "Pack raptor. Isolate, tire out, pounce, bleed, leave, repeat. Strong in a coordinated pack, weak alone.",
-    stats: { weight: "395 kg", speed: "~47 km/h", bite: "65", group: "8", growth: "Not confirmed" },
+    stats: { weight: "395 kg", speed: "~47 km/h", bite: "65", group: "8", growth: "About 5 h 55 min" },
     food: "Herrera, Pachy, Cerato, Kentro, Carno, Diablo, Troodon, Dryo, Galli, Maia, deer, rabbit",
     abilities: [
       ["LMB", "Bite", "Finish wounded targets."],
@@ -207,13 +208,13 @@ export const DINOS = [
       ["Epidermal Fibrosis", "Less bleed when things go wrong."],
       ["Cellular Regeneration", "Heal between waves."],
     ],
-    sources: [FANS("omniraptor")],
+    sources: [QG("carnivores"), FANS("omniraptor")],
   },
   {
     id: "troodon", name: "Troodon", nick: "Troodon", diet: "Carnivore", emoji: "☠️", color: "#6c3483",
     role: "Venom pack", difficulty: "Hard",
     about: "Tiny venom pack. Each pounce adds venom in 3 stages. Wait for the call cue between pounces, then the whole pack commits at stage 3.",
-    stats: { weight: "60 kg", speed: "~45 km/h", bite: "15", group: "10", growth: "Not confirmed" },
+    stats: { weight: "60 kg", speed: "~45 km/h", bite: "15", group: "10", growth: "About 3 h 10 min" },
     food: "Pachy, Teno, Kentro, Hypsi, Dryo, Ptera, Maia, deer, rabbit, chicken, goat, frogs, compies, turtles",
     abilities: [
       ["LMB", "Bite", "Small chip damage or finisher."],
@@ -230,7 +231,7 @@ export const DINOS = [
       ["Featherweight", "Harder to track."],
       ["Accelerated Prey Drive", "Finish the poisoned target faster."],
     ],
-    sources: [FANS("troodon")],
+    sources: [QG("carnivores"), FANS("troodon")],
   },
   {
     id: "austro", name: "Austroraptor", nick: "Austro", diet: "Carnivore", emoji: "🎣", color: "#2471a3",
@@ -255,13 +256,13 @@ export const DINOS = [
       ["Photosynthetic Tissue", "Heal faster in daylight, when you fish."],
       ["Featherweight", "Your tracks fade faster."],
     ],
-    sources: [FANS("austroraptor")],
+    sources: [QG("carnivores"), FANS("austroraptor")],
   },
   {
     id: "ptera", name: "Pteranodon", nick: "Ptera", diet: "Carnivore", emoji: "🪽", color: "#5d6d7e",
     role: "Flying scout and fisher", difficulty: "Medium",
     about: "Flies. Best for scouting, finding bodies and fishing. Avoids fights. Bad landings kill more Pteras than enemies do.",
-    stats: { weight: "90 kg", speed: "~38 km/h", bite: "20", group: "6", growth: "Not confirmed" },
+    stats: { weight: "90 kg", speed: "~38 km/h", bite: "20", group: "6", growth: "About 4 h 30 min" },
     food: "Fish, crabs, clams, chicken, rabbit, frogs, turtles, Hypsi, Troodon, Beipi",
     abilities: [
       ["LMB", "Peck", "Tiny damage."],
@@ -281,7 +282,7 @@ export const DINOS = [
       ["Enlarged Meniscus", "Bad landings hit stamina first."],
       ["Sustained Hydration", "Fewer trips down to water."],
     ],
-    sources: [FANS("pteranodon")],
+    sources: [QG("carnivores"), FANS("pteranodon")],
   },
 
   // ---------------- HERBIVORES ----------------
@@ -289,7 +290,7 @@ export const DINOS = [
     id: "trike", name: "Triceratops", nick: "Trike", diet: "Herbivore", emoji: "🦏", color: "#7d6608",
     role: "Front wall", difficulty: "Hard",
     about: "Huge horned tank. Holds the front, flips attackers and finishes them. The rear is the weak spot, so it needs a herd.",
-    stats: { weight: "9,500 kg", speed: "~23 km/h", bite: "900", group: "4", growth: "Long (not confirmed)" },
+    stats: { weight: "9,500 kg", speed: "~23 km/h", bite: "600 to 900 (sources differ)", group: "4", growth: "About 29 h" },
     food: "Variegated orange, fiddlehead, papaya",
     abilities: [
       ["LMB", "Horn attack", "Quick hit."],
@@ -310,13 +311,13 @@ export const DINOS = [
       ["Cellular Regeneration", "Heal faster after a fight."],
       ["Tactile Endurance (slot 2)", "Damage you take gives back stamina."],
     ],
-    sources: [FANS("triceratops")],
+    sources: [QG("herbivores"), FANS("triceratops")],
   },
   {
     id: "stego", name: "Stegosaurus", nick: "Stego", diet: "Herbivore", emoji: "🦕", color: "#196f3d",
     role: "Defensive giant", difficulty: "Medium",
     about: "Slow giant with a deadly tail. Keep your tail toward the threat and punish anyone who gets too close.",
-    stats: { weight: "6,000 kg", speed: "~29 km/h", bite: "50", group: "5", growth: "Not confirmed" },
+    stats: { weight: "6,000 kg", speed: "~26 to 29 km/h", bite: "50", group: "5", growth: "About 18 h" },
     food: "Marigold, sumac, pumpkin",
     abilities: [
       ["LMB", "Close bite", "For small threats."],
@@ -334,13 +335,13 @@ export const DINOS = [
       ["Tactile Endurance (slot 2)", "Hits on you give back stamina."],
       ["Epidermal Fibrosis", "Less bleed from packs."],
     ],
-    sources: [FANS("stegosaurus")],
+    sources: [QG("herbivores"), FANS("stegosaurus")],
   },
   {
     id: "kentro", name: "Kentrosaurus", nick: "Kentro", diet: "Herbivore", emoji: "🦔", color: "#117864",
     role: "Spiked defender", difficulty: "Medium",
     about: "Added in patch 0.21.720. Spikes hurt anyone who bites you. Hold your angle and let them hurt themselves.",
-    stats: { weight: "1,950 kg", speed: "~40 km/h", bite: "30", group: "5", growth: "Not confirmed" },
+    stats: { weight: "1,950 kg", speed: "~40 km/h", bite: "30", group: "5", growth: "About 11 h" },
     food: "Marigold, sumac, pumpkin",
     abilities: [
       ["LMB", "Tail swing", "Main attack."],
@@ -359,13 +360,13 @@ export const DINOS = [
       ["Tactile Endurance (slot 2)", "Get stamina back from hits."],
       ["Cellular Regeneration", "Heal faster."],
     ],
-    sources: [FANS("kentrosaurus")],
+    sources: [QG("herbivores"), FANS("kentrosaurus")],
   },
   {
     id: "diablo", name: "Diabloceratops", nick: "Diablo", diet: "Herbivore", emoji: "😈", color: "#922b21",
     role: "Defensive charger", difficulty: "Medium",
     about: "Aggressive defender with horns. Keep threats in front, charge, then go back to your herd.",
-    stats: { weight: "3,000 kg", speed: "~34 km/h", bite: "275", group: "6", growth: "Not confirmed" },
+    stats: { weight: "3,000 kg", speed: "~34 to 36 km/h", bite: "275", group: "6", growth: "About 7 h 45 min" },
     food: "Marigold, fireweed, cashew",
     abilities: [
       ["LMB", "Horn attack", "Main front attack."],
@@ -384,13 +385,13 @@ export const DINOS = [
       ["Congenital Hypoalgesia", "Less damage from bigger dinos."],
       ["Tactile Endurance (slot 2)", "Stamina from hits."],
     ],
-    sources: [FANS("diabloceratops")],
+    sources: [QG("herbivores"), FANS("diabloceratops")],
   },
   {
     id: "maia", name: "Maiasaura", nick: "Maia", diet: "Herbivore", emoji: "🛡️", color: "#1a5276",
     role: "Herd pillar", difficulty: "Easy",
     about: "Big herd protector. Switches between 2 and 4 legs. Strong when guarding babies and the herd, weak alone.",
-    stats: { weight: "3,750 kg", speed: "~42 km/h", bite: "50", group: "10", growth: "Not confirmed" },
+    stats: { weight: "3,750 kg", speed: "~42 km/h", bite: "50", group: "10", growth: "About 7 h" },
     food: "Mountain ash, wild potato root, radish root",
     abilities: [
       ["Stance toggle", "2 legs / 4 legs", "4 legs for travel, 2 legs to face threats."],
@@ -408,7 +409,7 @@ export const DINOS = [
       ["Hypervigilance", "Hear predators coming while you eat."],
       ["Truculency", "Shake off latched raptors."],
     ],
-    sources: [FANS("maiasaura")],
+    sources: [QG("herbivores"), FANS("maiasaura")],
   },
   {
     id: "teno", name: "Tenontosaurus", nick: "Teno", diet: "Herbivore", emoji: "🦎", color: "#76448a",
@@ -433,13 +434,13 @@ export const DINOS = [
       ["Xerocole Adaptation", "Water from plants. Less time at risky water."],
       ["Cellular Regeneration", "Heal faster."],
     ],
-    sources: [FANS("tenontosaurus"), BEGINNER],
+    sources: [QG("herbivores"), FANS("tenontosaurus"), BEGINNER],
   },
   {
     id: "pachy", name: "Pachycephalosaurus", nick: "Pachy", diet: "Herbivore", emoji: "🪨", color: "#a04000",
     role: "Hit-and-run headbutter", difficulty: "Easy",
     about: "Headbutts break bones. Charge a target in a straight line, fracture it, then run. Never stay after a good hit.",
-    stats: { weight: "700 kg", speed: "~42 km/h", bite: "30", group: "8", growth: "About 6 h 15 min" },
+    stats: { weight: "500 to 700 kg (sources differ)", speed: "~42 km/h", bite: "30", group: "8", growth: "About 6 h 15 min" },
     food: "Variegated orange, agave, coconut",
     abilities: [
       ["LMB", "Bite", "Small extra attack."],
@@ -457,7 +458,7 @@ export const DINOS = [
       ["Osteosclerosis", "Resist fractures yourself."],
       ["Hypervigilance", "Hear predators while you eat."],
     ],
-    sources: [FANS("pachycephalosaurus"), BEGINNER],
+    sources: [QG("herbivores"), FANS("pachycephalosaurus"), BEGINNER],
   },
   {
     id: "dryo", name: "Dryosaurus", nick: "Dryo", diet: "Herbivore", emoji: "💨", color: "#27ae60",
@@ -480,7 +481,7 @@ export const DINOS = [
       ["Barometric Sensitivity", "Warning before storms and droughts."],
       ["Xerocole Adaptation", "Water from plants, fewer risky drinks."],
     ],
-    sources: [FANS("dryosaurus"), BEGINNER],
+    sources: [QG("herbivores"), FANS("dryosaurus"), BEGINNER],
   },
   {
     id: "hypsi", name: "Hypsilophodon", nick: "Hypsi", diet: "Herbivore", emoji: "🧪", color: "#58d68d",
@@ -505,7 +506,7 @@ export const DINOS = [
       ["Hypervigilance", "Hear predators while eating."],
       ["Enlarged Meniscus", "Falls hit stamina first."],
     ],
-    sources: [FANS("hypsilophodon"), BEGINNER],
+    sources: [QG("herbivores"), FANS("hypsilophodon"), BEGINNER],
   },
 
   // ---------------- OMNIVORES ----------------
@@ -513,7 +514,7 @@ export const DINOS = [
     id: "galli", name: "Gallimimus", nick: "Galli", diet: "Omnivore", emoji: "🏃", color: "#d4ac0d",
     role: "Fast flock scout", difficulty: "Easy",
     about: "The ostrich. Fast, eats almost anything, and buffs its flock's speed with a call. Kite, don't fight.",
-    stats: { weight: "535 kg", speed: "~47 km/h (more with good diet)", bite: "25", group: "10", growth: "About 5 h 25 min" },
+    stats: { weight: "535 kg", speed: "~46 km/h (more with good diet)", bite: "25", group: "8 to 10 (sources differ)", growth: "About 5 h 25 min" },
     food: "Crab, mango, frogs, sumac, pumpkin, sunchoke roots. Sniff for burrows (frogs, crabs, compies).",
     abilities: [
       ["LMB", "Kick", "Camera-aimed kick. Stops you moving."],
@@ -533,13 +534,13 @@ export const DINOS = [
       ["Social Behavior", "Bigger flock. Leader only."],
       ["Enhanced Digestion", "Nutrients last longer (unlock first)."],
     ],
-    sources: [FANS("gallimimus"), BEGINNER],
+    sources: [QG("omnivores"), FANS("gallimimus"), BEGINNER],
   },
   {
     id: "beipi", name: "Beipiaosaurus", nick: "Beipi", diet: "Omnivore", emoji: "🦆", color: "#2e86c1",
     role: "Water forager", difficulty: "Easy",
     about: "Small amphibious omnivore. Weak on land, slippery in water. Dives, breaches and switches banks to escape.",
-    stats: { weight: "90 kg", speed: "~32 km/h", bite: "20", group: "10", growth: "Not confirmed" },
+    stats: { weight: "90 kg", speed: "~32 km/h", bite: "20", group: "10 to 12 (sources differ)", growth: "About 3 h 40 min" },
     food: "Crab, fish, frogs, radish flower, wild potato vine, sunchoke roots",
     abilities: [
       ["LMB (land)", "Claws", "Make an opening, don't brawl."],
@@ -560,7 +561,7 @@ export const DINOS = [
       ["Submerged Optical Retention", "See further underwater."],
       ["Social Behavior", "Bigger group. Leader only."],
     ],
-    sources: [FANS("beipiaosaurus")],
+    sources: [QG("omnivores"), FANS("beipiaosaurus")],
   },
 ];
 
