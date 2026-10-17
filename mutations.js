@@ -1,4 +1,4 @@
-// Mutations, verified 2026-10-17. Main source: theisle.info mutations page (updated May 2026),
+// Mutations, verified 2026-10-17. Main sources: Evrima Quick Guide (updated 4 Sep 2026) and theisle.info (May 2026),
 // cross-checked with supercraft.host (Sept 2026) and holy.gg (May 2026).
 // Devs changed many values in Oct 2025 (DevBlog #63) without publishing new numbers,
 // so percentages are the last published defaults and servers can change them.
@@ -18,8 +18,8 @@ export const MUTATIONS = [
   { name: "Barometric Sensitivity", value: "", diet: "Herbivore", type: "life", effect: "Warning before storms or droughts." },
   { name: "Hypervigilance", value: "50%", diet: "Herbivore", type: "life", effect: "Wider camera while eating or drinking, and other dinos' footsteps are louder." },
   { name: "Photosynthetic Regeneration", value: "10%", diet: "Herbivore", type: "life", effect: "Faster stamina regen in daylight." },
-  { name: "Truculency", value: "5 to 20%", diet: "Herbivore", type: "life", effect: "Better chance to throw off latched animals when bucking." },
-  { name: "Xerocole Adaptation", value: "15 to 20%", diet: "Herbivore", type: "life", effect: "Get water from eating plants." },
+  { name: "Truculency", value: "5%", diet: "Herbivore", type: "life", effect: "Better chance to throw off latched animals when bucking." },
+  { name: "Xerocole Adaptation", value: "15%", diet: "Herbivore", type: "life", effect: "Get water from eating plants." },
   { name: "Tactile Endurance", value: "50%", diet: "Herbivore", type: "slot2", effect: "Part of the damage you take comes back as stamina." },
   { name: "Social Behavior", value: "", diet: "HerbOmni", type: "life", leader: true, effect: "Bigger group size limit. Group leader only." },
 
@@ -45,13 +45,13 @@ export const MUTATIONS = [
   { name: "Traumatic Thrombosis", value: "", diet: "All", type: "slot2", effect: "You can't bleed out while resting." },
   { name: "Gastronomic Regeneration", value: "10%", diet: "All", type: "slot2", effect: "Eating heals a little." },
 
-  { name: "Enhanced Digestion", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Keep a good diet for a long time (sources differ: 60 minutes or 60% of your growth).", effect: "Nutrients go down slower." },
-  { name: "Heightened Ghrelin", value: "25%", diet: "All", type: "unlock", slots: [2], unlock: "Overeat a lot (sources differ on the exact task).", effect: "You can overeat a lot more before throwing up." },
+  { name: "Enhanced Digestion", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Keep your nutrients up for 60 minutes.", effect: "Nutrients go down slower." },
+  { name: "Heightened Ghrelin", value: "25%", diet: "All", type: "unlock", slots: [2], unlock: "Keep hunger above 80% for 30 minutes.", effect: "You can overeat a lot more before throwing up." },
   { name: "Multichambered Lungs", value: "5%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Burn about 4,500 stamina sprinting or fast swimming.", effect: "Stamina starts coming back sooner." },
   { name: "Reinforced Tendons", value: "10%", diet: "All", type: "unlock", slots: [2, 3], unlock: "Jump 50 times.", effect: "Jumps cost less stamina (cheaper take-off for Ptera)." },
   { name: "Reniculate Kidneys", value: "", diet: "All", type: "unlock", slots: [2, 3], unlock: "Lose about 1,250 thirst drinking saltwater.", effect: "You can drink saltwater." },
   { name: "Parthenogenesis", value: "", diet: "All", type: "unlock", slots: [2], female: true, noInherit: true, unlock: "Female only. Unlock condition not published.", effect: "Nest without a mate. Not passed on to babies." },
-  { name: "Prolific Reproduction", value: "10%", diet: "All", type: "unlock", slots: [2], female: true, unlock: "Female only. Raise babies, about 5 to juvenile (one source).", effect: "Your babies regen faster, need less food and grow faster." },
+  { name: "Prolific Reproduction", value: "10%", diet: "All", type: "unlock", slots: [2], female: true, unlock: "Female only. Unlock condition not published.", effect: "Your babies regen faster, need less food and grow faster." },
 ];
 
 export const HORDETEST = [
